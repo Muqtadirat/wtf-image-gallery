@@ -81,3 +81,15 @@ galleryForm.addEventListener('submit',  (event) => {
 
 
 fillGallery();
+
+//Target a remove image button
+//When clicked it should remove (shift?) the zero index
+// or first li of the gallery?
+
+const delImageBtn = document.querySelector(".removeImage");
+
+function delImage() {
+ gallery.removeChild(gallery.firstChild)
+}
+
+delImageBtn.addEventListener("click", delImage)
